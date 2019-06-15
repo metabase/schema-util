@@ -1,4 +1,4 @@
-(defproject metabase/schema-util "1.0.0-SNAPSHOT"
+(defproject metabase/schema-util "1.0.0"
   :description "Helpful prismatic/schema utility functions and schemas."
   :url "https://github.com/metabase/schema-util"
   :min-lein-version "2.5.0"
@@ -18,9 +18,9 @@
 
   :dependencies
   [[cheshire "5.8.1"]
-   [medley "1.0.0"]
+   [medley "1.2.0"]
    [metabase/common "1.0.1"]
-   [prismatic/schema "1.1.9"]]
+   [prismatic/schema "1.1.11"]]
 
   :profiles
   {:dev
