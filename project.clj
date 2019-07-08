@@ -1,4 +1,4 @@
-(defproject metabase/schema-util "1.0.1"
+(defproject metabase/schema-util "1.0.2"
   :description "Helpful prismatic/schema utility functions and schemas."
   :url "https://github.com/metabase/schema-util"
   :min-lein-version "2.5.0"
@@ -11,7 +11,6 @@
    "bikeshed"                  ["with-profile" "+bikeshed" "bikeshed" "--max-line-length" "150"]
    "check-namespace-decls"     ["with-profile" "+check-namespace-decls" "check-namespace-decls"]
    "eastwood"                  ["with-profile" "+eastwood" "eastwood"]
-   "check-reflection-warnings" ["with-profile" "+reflection-warnings" "check"]
    "docstring-checker"         ["with-profile" "+docstring-checker" "docstring-checker"]
    ;; `lein lint` will run all linters
    "lint"                      ["do" ["eastwood"] ["bikeshed"] ["check-namespace-decls"] ["docstring-checker"]]}
@@ -19,13 +18,13 @@
   :dependencies
   [[cheshire "5.8.1"]
    [medley "1.2.0"]
-   [metabase/common "1.0.2"]
+   [metabase/common "1.0.4"]
    [prismatic/schema "1.1.11"]]
 
   :profiles
   {:dev
    {:dependencies
-    [[org.clojure/clojure "1.10.0"]
+    [[org.clojure/clojure "1.10.1"]
      [expectations "2.2.0-beta2"]]
 
     :injections
